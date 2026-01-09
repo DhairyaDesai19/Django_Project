@@ -14,13 +14,13 @@ Git
 
 Follow these steps in your terminal:
 
-1️⃣ Clone the repository
+1️⃣ Clone the repository:
 git clone https://github.com/DhairyaDesai19/Django_Project.git
 
-2️⃣ Move into the project directory
+2️⃣ Move into the project directory:
 cd Django_Project
 
-3️⃣ Create a virtual environment
+3️⃣ Create a virtual environment:
 python -m venv venv
 
 4️⃣ Activate the virtual environment
@@ -29,10 +29,10 @@ On Windows:
 
 venv\Scripts\activate
 
-5️⃣ Install dependencies
+5️⃣ Install dependencies:
 pip install -r requirements.txt
 
-6️⃣ Run the development server
+6️⃣ Run the development server:
 python manage.py runserver
 
 🌐 Access the Site
