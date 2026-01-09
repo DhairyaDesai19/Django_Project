@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/blog.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 style="text-align: center;">Blog Home Page</h1>
+    <div class="grid">
+        {% for post in posts %}
+        <div class="card">
+            <a href="{% url 'blog:post_detail' post.id %}" target="_blank">
+
+                <img class="thumb" src="{{ post.image.url }}" alt="{{ post.title }}">
+
+                <h2 class="card-title">{{ post.title }}</h2>
+                <p class="card-author">By {{ post.author_name }}</p>
+                <p class="card-desc">{{ post.description }}</p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
