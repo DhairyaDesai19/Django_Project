@@ -1,50 +1,49 @@
 Django Blog Project
 
-This is a simple blog application built using Django as part of a project.
+This is a simple Blog application built with Django.
+It includes demo data so the content (title, author, description, images) shows immediately after setup.
 
-📌 Requirements
-
-Make sure you have these installed:
+🛠 Requirements
 
 Python 3.x
 
 Git
 
-🚀 How to Run the Project Locally
-
-Follow these steps in your terminal:
-
-1️⃣ Clone the repository:
+🚀 Setup & Run (Copy–Paste Friendly)
+1️⃣ Clone the repository: 
 git clone https://github.com/DhairyaDesai19/Django_Project.git
 
-2️⃣ Move into the project directory:
+2️⃣ Go to project directory: 
 cd Django_Project
 
-3️⃣ Create a virtual environment:
-python -m venv venv
+3️⃣ Create virtual environment: 
+python -m venv env
 
-4️⃣ Activate the virtual environment
+4️⃣ Activate virtual environment (Windows): 
+env\Scripts\activate
 
-On Windows:
-
-venv\Scripts\activate
-
-5️⃣ Install dependencies:
+5️⃣ Install dependencies: 
 pip install -r requirements.txt
 
-6️⃣ Run the development server:
+6️⃣ Apply migrations: 
+python manage.py migrate
+
+7️⃣ Load demo data (IMPORTANT)
+
+This loads sample posts added via admin.: 
+
+python manage.py loaddata data.json
+
+8️⃣ Run the server: 
 python manage.py runserver
 
-🌐 Access the Site
-
-Open your browser and go to:
-
+🌐 Open in Browser: 
 http://127.0.0.1:8000/
 
-📝 Notes
+🔐 Admin Panel
+http://127.0.0.1:8000/admin/
 
-This project is for learning and demonstration purposes.
 
-The virtual environment (venv) is not included in the repository.
+(Create a superuser if needed)
 
-Make sure Python is added to your system PATH.
+python manage.py createsuperuser
