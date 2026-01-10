@@ -41,30 +41,37 @@ Verify installation:
 git --version
 
 
-##🚀 Setup & Run:
-#1️⃣ Clone the repository: 
+###🚀 Setup & Run:
+
+##1️⃣ Clone the repository: 
 
 git clone https://github.com/DhairyaDesai19/Django_Project.git
-#2️⃣ Go to project directory: 
+
+##2️⃣ Go to project directory: 
 
 cd Django_Project
-#3️⃣ Create virtual environment: 
+
+##3️⃣ Create virtual environment: 
 
 python -m venv env
-#4️⃣ Activate virtual environment (Windows): 
+
+##4️⃣ Activate virtual environment (Windows): 
 
 env\Scripts\activate
-#5️⃣ Install dependencies: 
+
+##5️⃣ Install dependencies: 
 
 pip install -r requirements.txt
-#6️⃣ Apply migrations: 
+
+##6️⃣ Apply migrations: 
 
 python manage.py migrate
-#7️⃣ Run the server: 
+
+##7️⃣ Run the server: 
 
 python manage.py runserver
 
-#🌐 Open in Browser
+##🌐 Open in Browser
 
 http://127.0.0.1:8000/
 
