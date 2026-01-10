@@ -1,10 +1,11 @@
 # Django Blog Project
 
-This is a simple **Blog application built with Django**.
+This is a simple Blog application built with Django.
 
 The project includes:
-- Preloaded database (`db.sqlite3`)
+- Preloaded database (db.sqlite3)
 - Media files (images)
+
 So the content appears immediately after setup.
 
 ---
@@ -15,41 +16,63 @@ So the content appears immediately after setup.
 
 ---
 
-## 🚀 Setup & Run (Copy–Paste Friendly)
+## 🧰 Install Git (if not installed)
 
-### 1️⃣ Clone the repository: 
+### Check if Git is already installed: 
+
+git --version
+
+If Git is not recognized, install it:
+
+Download Git from: https://git-scm.com/download/win
+
+Run the installer
+
+During installation, select: 
+
+Git from the command line and also from 3rd-party software
+
+Finish installation
+
+Restart terminal
+
+Verify installation:
+
+git --version
+
+
+🚀 Setup & Run:
+1️⃣ Clone the repository: 
 
 git clone https://github.com/DhairyaDesai19/Django_Project.git
-
 2️⃣ Go to project directory: 
 
-
 cd Django_Project
-
 3️⃣ Create virtual environment: 
 
 python -m venv env
-
 4️⃣ Activate virtual environment (Windows): 
 
 env\Scripts\activate
-
 5️⃣ Install dependencies: 
 
 pip install -r requirements.txt
+6️⃣ Apply migrations: 
 
-6️⃣ Run the server: 
+python manage.py migrate
+7️⃣ Run the server: 
 
 python manage.py runserver
 
-🌐 Open in Browser: 
+🌐 Open in Browser
 
 http://127.0.0.1:8000/
 
 🔐 Admin Panel
 
 http://127.0.0.1:8000/admin/
+(Create superuser only if needed)
 
-(Create superuser only if needed): 
-
+bash
+Copy code
 python manage.py createsuperuser
